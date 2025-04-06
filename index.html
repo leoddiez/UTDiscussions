@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #0e3d29;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .top-bar {
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: left;
+        padding: 0 24px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .top-bar .rectangle-4137 {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+        margin-left: -12px;
+        margin-right: -170px;
+      }
+
+      .top-bar .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+      }
+
+      .create-account-wrapper {
+        width: 100%;
+        background-color: #0e3d29;
+        display: flex;
+        justify-content: center;
+      }
+
+      .create-account {
+        background-color: white;
+        margin: 80px 0;
+        padding: 0px 0px;
+        width: 100%;
+        max-width: 3000px;
+        height: 550px;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .create-account .form-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #ae3d00;
+        margin-bottom: 12px;
+      }
+
+      .create-account .description {
+        font-size: 16px;
+        color: #ae3d00;
+        margin-bottom: 48px;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        margin-bottom: 24px;
+      }
+
+      .input-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-group label {
+        color: #ae3d00;
+        font-weight: 500;
+        margin-bottom: 6px;
+        font-size: 14px;
+      }
+
+      .input-group input {
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .submit-button {
+        background-color: #ae3d00;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        margin-top: 24px;
+        transition: background 0.3s ease;
+      }
+
+      .submit-button:hover {
+        background-color: #922f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="rectangle-4137"></div>
+      <div class="title">UTDiscussions</div>
+    </div>
+
+    <div class="create-account-wrapper">
+      <div class="create-account">
+        <div class="form-title">Create Account</div>
+        <div class="description">
+          Join the tutoring community by creating an account below.
+        </div>
+
+        <form>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter a username"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group" style="flex: 1">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter a password"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="submit-button">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
